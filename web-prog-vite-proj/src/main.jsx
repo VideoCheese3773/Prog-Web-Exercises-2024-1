@@ -6,10 +6,10 @@ import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
-
+/*
 const rootElement = document.getElementById('app')
 const root = createRoot(rootElement)
-root.render(<h1>Hello World!</h1>)
+root.render(<h1>Hello World!</h1>)*/
 
 document.querySelector('#app').innerHTML = `
   <div>
