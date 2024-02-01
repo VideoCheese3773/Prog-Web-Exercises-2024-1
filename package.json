@@ -1,0 +1,20 @@
+{
+  "name": "prog-web-exercises-2024-1",
+  "version": "1.0.0",
+  "description": "Exercises for the Web Programming Class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VideoCheese3773/Prog-Web-Exercises-2024-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VideoCheese3773/Prog-Web-Exercises-2024-1/issues"
+  },
+  "homepage": "https://github.com/VideoCheese3773/Prog-Web-Exercises-2024-1#readme"
+}
