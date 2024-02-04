@@ -7,5 +7,5 @@ import App from './App'
 const rootElement = document.getElementById('app')
 const root = createRoot(rootElement)
 
-root.render(<App />) // use <ComponentNAme />
+root.render(<App />)
 console.log(rootElement);
