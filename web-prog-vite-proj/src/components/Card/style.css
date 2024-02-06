@@ -1,0 +1,21 @@
+/*Card Styles*/
+.mainDiv{
+    background-color: aqua;
+    width: 50%;
+    border-radius: 25px;
+}
+
+.textDiv{
+    background-color: rgb(99, 99, 255);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 1px 5%;
+}
+
+.cardTitle{
+    color: aliceblue;
+}
+
+.cardDesc{
+    color: aliceblue;
+}
