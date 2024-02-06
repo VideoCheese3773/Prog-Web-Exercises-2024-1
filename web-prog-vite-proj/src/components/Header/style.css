@@ -1,4 +1,10 @@
 /*Header Styles*/
+@media screen and (max-width:762px) {/*cellphone*/
+    body{
+        background-color: aqua;
+    }
+}
+
 header {
     width: 100%;
     background: rgb(99, 99, 255);
@@ -28,3 +34,4 @@ button:hover {
     display: flex;
     width: auto;
 }
+
