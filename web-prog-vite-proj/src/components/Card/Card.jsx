@@ -1,4 +1,3 @@
-import React from 'react'
 import './style.css'
 
 import img1 from '../../images/photo-1.jpg'
@@ -18,13 +17,13 @@ export function Card() {
         <div className='cardContainer'>
             {
                 images.map((images) =>
-                    <div className='mainDiv'>
+                    <div className='mainDiv' key={images}>
                         <img className='cardImg' src={images} alt="stockImage" />
                         <div className='textDiv'>
                             <h2 className='cardTitle'>
                                 Title
                             </h2>
-                            <p className='cardDesc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis adipisci aliquid dignissimos veritatis dolorem eius</p>
+                            <p className='cardDesc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         </div>
                     </div>
                 )

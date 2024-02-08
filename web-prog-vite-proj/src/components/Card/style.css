@@ -1,35 +1,61 @@
 /*Card Styles*/
 .cardContainer{
     width: 100%;
-    display: flex;
-    flex-direction: row;
+    height: 100%;
     overflow-x: scroll;
+    display: flex;
+    padding-bottom: 2%;
+}
+
+.cardContainer::-webkit-scrollbar{
+    display: none;
 }
 
 .mainDiv{
-    background-color: aqua;
-    width: 50%;
-    border-radius: 25px;
+    min-width: 60%;
     margin-right: 5%;
-}
-
-.textDiv{
-    height: 50%;
-    width: 100%;
-    background-color: rgb(99, 99, 255);
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    padding: 0% 5%;
+    background-color: rgb(30, 30, 50);
+    padding: 5%;
+    border-radius: 25px;
 }
 
 .cardImg{
     width: 100%;
 }
 
-.cardTitle{
-    color: aliceblue;
-}
+@media (min-width: 762px) {
+    .cardContainer{
+        width: 100%;
+        height: 100%;
+        overflow-x: scroll;
+        display: flex;
+    }
 
-.cardDesc{
-    color: aliceblue;
+    .cardContainer::-webkit-scrollbar{
+        display: none;
+    }
+
+    .mainDiv{
+        min-width: 20%;
+        margin-right: 2%;
+        background-color: rgb(30, 30, 50);
+        padding: 1.8%;
+        border-radius: 25px;
+    }
+
+    .cardImg{
+        width: 100%;
+    }
+
+    .textDiv{
+        padding-bottom: 2%;
+    }
+
+    .cardTitle{
+        margin: 0px;
+    }
+
+    .cardDesc{
+        margin: 0px;
+    }
 }

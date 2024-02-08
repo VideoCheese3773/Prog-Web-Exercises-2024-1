@@ -1,5 +1,19 @@
 /*Body Styles*/
-main{
+main {
     width: 90%;
     margin: auto;
+}
+
+@media (min-width: 762px) {
+    main {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bodyTitle {
+        margin: 2% 0%;
+    }
 }
