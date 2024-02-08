@@ -4,6 +4,14 @@ main {
     margin: auto;
 }
 
+.bg{
+    background-color: rgb(30, 30, 50);
+}
+
+.textBlock{
+    padding: 3%;
+}
+
 @media (min-width: 762px) {
     main {
         width: 90%;
@@ -15,5 +23,19 @@ main {
 
     .bodyTitle {
         margin: 2% 0%;
+    }
+
+    .pCont{
+        width: 80%;
+        display: flex;
+        gap: 5%;
+    }
+
+    .textBlock{
+        padding: 2%;
+    }
+
+    .bg{
+        background-color: rgb(30, 30, 50);
     }
 }

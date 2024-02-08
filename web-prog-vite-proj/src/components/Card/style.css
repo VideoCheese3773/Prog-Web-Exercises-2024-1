@@ -4,7 +4,7 @@
     height: 100%;
     overflow-x: scroll;
     display: flex;
-    padding-bottom: 2%;
+    padding: 2% 0%;
 }
 
 .cardContainer::-webkit-scrollbar{
@@ -48,7 +48,7 @@
     }
 
     .textDiv{
-        padding-bottom: 2%;
+        padding: 2% 0%;
     }
 
     .cardTitle{

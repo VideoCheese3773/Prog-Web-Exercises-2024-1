@@ -4,15 +4,20 @@ header {
     width: 100%;
     background: rgb(99, 99, 255);
     top: 0%;
-    padding-bottom: 5%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .headTitle {
     color: rgb(26, 26, 37);
+}
+
+.pc{
+    display: none;
+}
+.mobile{
+    display:block;
 }
 
 .headBtn {
@@ -41,5 +46,12 @@ header {
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
+    }
+
+    .pc{
+        display: block;
+    }
+    .mobile{
+        display: none;
     }
 }
