@@ -1,5 +1,5 @@
 /*Card Styles*/
-.cardContainer{
+.card-container{
     width: 100%;
     height: 100%;
     overflow-x: scroll;
@@ -7,11 +7,11 @@
     padding: 2% 0%;
 }
 
-.cardContainer::-webkit-scrollbar{
+.card-container::-webkit-scrollbar{
     display: none;
 }
 
-.mainDiv{
+.main-div{
     min-width: 60%;
     margin-right: 5%;
     background-color: rgb(30, 30, 50);
@@ -19,23 +19,23 @@
     border-radius: 25px;
 }
 
-.cardImg{
+.card-img{
     width: 100%;
 }
 
 @media (min-width: 762px) {
-    .cardContainer{
+    .card-container{
         width: 100%;
         height: 100%;
         overflow-x: scroll;
         display: flex;
     }
 
-    .cardContainer::-webkit-scrollbar{
+    .card-container::-webkit-scrollbar{
         display: none;
     }
 
-    .mainDiv{
+    .main-div{
         min-width: 20%;
         margin-right: 2%;
         background-color: rgb(30, 30, 50);
@@ -43,19 +43,19 @@
         border-radius: 25px;
     }
 
-    .cardImg{
+    .card-img{
         width: 100%;
     }
 
-    .textDiv{
+    .text-div{
         padding: 2% 0%;
     }
 
-    .cardTitle{
+    .card-title{
         margin: 0px;
     }
 
-    .cardDesc{
+    .card-desc{
         margin: 0px;
     }
 }

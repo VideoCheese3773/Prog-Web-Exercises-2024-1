@@ -8,7 +8,7 @@ main {
     background-color: rgb(30, 30, 50);
 }
 
-.textBlock{
+.text-block{
     padding: 3%;
 }
 
@@ -21,17 +21,17 @@ main {
         align-items: center;
     }
 
-    .bodyTitle {
+    .body-title {
         margin: 2% 0%;
     }
 
-    .pCont{
+    .p-cont{
         width: 80%;
         display: flex;
         gap: 5%;
     }
 
-    .textBlock{
+    .text-block{
         padding: 2%;
     }
 

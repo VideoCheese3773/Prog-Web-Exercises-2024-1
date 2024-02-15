@@ -5,11 +5,19 @@ header {
     background: rgb(99, 99, 255);
     top: 0%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-row{
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.headTitle {
+.head-title {
     color: rgb(26, 26, 37);
 }
 
@@ -21,7 +29,7 @@ header {
     display: block;
 }
 
-.headBtn {
+.head-btn {
     border: none;
     margin-right: 1%;
     color: rgb(26, 26, 37);
@@ -30,26 +38,25 @@ header {
     width: 33%;
 }
 
-.headBtn:hover {
+.head-btn:hover {
     background: rgb(59, 59, 162);
     color: aliceblue;
 }
 
-.btnContainer {
+.btn-container {
     display: flex;
     width: auto;
+    padding: 0%;
+    margin-top: 1%;
 }
 
-.hamburgerMenu{
+.hamburger-menu{
     border: none;
     background: rgb(99, 99, 255);
+    padding: 0%;
 }
 
-.hamburgerMenu:hover{
-    background: rgb(59, 59, 162);
-}
-
-@media screen and (min-width:762px) {
+@media (min-width:762px) {
 
     /*desktop*/
     header {
@@ -71,7 +78,7 @@ header {
         display: none;
     }
 
-    .hamburgerMenu{
+    .hamburger-menu{
         display: none;
     }
 }

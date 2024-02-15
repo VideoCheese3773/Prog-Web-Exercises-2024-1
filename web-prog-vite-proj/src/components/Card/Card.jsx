@@ -10,20 +10,76 @@ import img7 from '../../images/photo-7.jpg'
 import img8 from '../../images/photo-8.jpg'
 import img9 from '../../images/photo-9.jpg'
 
-const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9]
+const images = [
+    {
+        id: crypto.randomUUID(),
+        src: img1,
+        title: "Books",
+        text: "More books"
+    },
+    {
+        id: crypto.randomUUID(),
+        src: img2,
+        title: "Flowers",
+        text: "More flowers"
+    },
+    {
+        id: crypto.randomUUID(),
+        src: img3,
+        title: "Coffee Shop",
+        text: "More coffee"
+    },
+    {
+        id: crypto.randomUUID(),
+        src: img4,
+        title: "Tower",
+        text: "Big tower"
+    },
+    {
+        id: crypto.randomUUID(),
+        src: img5,
+        title: "Vynil",
+        text: "More vynils please"
+    },
+    {
+        id: crypto.randomUUID(),
+        src: img6,
+        title: "Shopping Cart",
+        text: "Give food please"
+    },
+    {
+        id: crypto.randomUUID(),
+        src: img7,
+        title: "Hair",
+        text: "Cool hair"
+    },
+    {
+        id: crypto.randomUUID(),
+        src: img8,
+        title: "Drawings",
+        text: "Very color, much wow"
+    },
+    {
+        id: crypto.randomUUID(),
+        src: img9,
+        title: "Dress",
+        text: "White is the new black"
+    }
+]
+console.log(images);
+
+//todo change css class from asdfAsdf to asdf-asdf
 
 export function Card() {
     return (
-        <div className='cardContainer'>
+        <div className='card-container'>
             {
-                images.map((images) =>
-                    <div className='mainDiv' key={images}>
-                        <img className='cardImg' src={images} alt="stockImage" />
-                        <div className='textDiv'>
-                            <h2 className='cardTitle'>
-                                Title
-                            </h2>
-                            <p className='cardDesc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                images.map(({id, src, title, text}) =>
+                    <div className='main-div' key={id}>
+                        <img className='card-img' src={src} alt="stockImage" />
+                        <div className='text-div'>
+                            <h2 className='card-title'>{title}</h2>
+                            <p className='card-desc'>{text}</p>
                         </div>
                     </div>
                 )

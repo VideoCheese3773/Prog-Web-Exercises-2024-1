@@ -17,37 +17,58 @@ const links = [
 ]
 console.log(links);
 
-const [showMenu ,setShowMenu] = useState(false)
-
-console.log("state value", showMenu);
-
-const handleClick = (event) => {
-    setShowMenu(!showMenu)
-}
-
 //TODO Finish functionality of dropdown menu
 
 export function Header() {
+    const [showMenu, setShowMenu] = useState(false)
+
+    console.log("state value", showMenu);
+
+    const handleClick = (event) => {
+        setShowMenu(!showMenu)
+    }
+
     return (
         <header>
-            <h2 className='headTitle pc'>Reputable Brand Page</h2>
-            <h2 className='headTitle mobile'>RBP</h2>
+            <div className='header-row'>
+                <h2 className='head-title pc'>Reputable Brand Page</h2>
+                <h2 className='head-title mobile'>RBP</h2>
 
-            <nav>
-                <ul className='btnContainer'>
-                    {
-                        links.map(({ id, text }) => {
-                            return (
-                                <li className='headBtn' key={id}>{text}</li>
-                            )
-                        })
-                    }
-                </ul>
-            </nav>
+                <nav className='pc'>
+                    <ul className='btn-container'>
+                        {
+                            links.map(({ id, text }) => {
+                                return (
+                                    <li className='head-btn' key={id}>{text}</li>
+                                )
+                            })
+                        }
+                    </ul>
+                </nav>
 
-            <button className='hamburgerMenu'>
+                <button onClick={handleClick} className='hamburger-menu'>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg" alt="hamburger menu" />
-            </button>
+                </button>
+            </div>
+
+                {
+                    showMenu
+                        ? (
+                            <nav className='mobile'>
+                                <ul className='btn-container'>
+                                    {
+                                        links.map(({ id, text }) => {
+                                            return (
+                                                <li className='head-btn' key={id}>{text}</li>
+                                            )
+                                        })
+                                    }
+                                </ul>
+                            </nav>
+                        )
+                        :
+                        null
+                }
         </header>
     )
 }
