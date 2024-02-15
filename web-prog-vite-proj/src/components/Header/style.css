@@ -13,17 +13,21 @@ header {
     color: rgb(26, 26, 37);
 }
 
-.pc{
+.pc {
     display: none;
 }
-.mobile{
-    display:block;
+
+.mobile {
+    display: block;
 }
 
 .headBtn {
     border: none;
     margin-right: 1%;
+    color: rgb(26, 26, 37);
     background: rgb(99, 99, 255);
+    list-style-type: none;
+    width: 33%;
 }
 
 .headBtn:hover {
@@ -36,7 +40,18 @@ header {
     width: auto;
 }
 
-@media screen and (min-width:762px) {/*desktop*/
+.hamburgerMenu{
+    border: none;
+    background: rgb(99, 99, 255);
+}
+
+.hamburgerMenu:hover{
+    background: rgb(59, 59, 162);
+}
+
+@media screen and (min-width:762px) {
+
+    /*desktop*/
     header {
         width: 100%;
         background: rgb(99, 99, 255);
@@ -48,10 +63,15 @@ header {
         justify-content: space-around;
     }
 
-    .pc{
+    .pc {
         display: block;
     }
-    .mobile{
+
+    .mobile {
+        display: none;
+    }
+
+    .hamburgerMenu{
         display: none;
     }
 }
