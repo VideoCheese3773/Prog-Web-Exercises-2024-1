@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { links } from '../../const/links';
 import './style.css'
 
-
 //TODO Finish functionality of dropdown menu
 
 export function Header() {
@@ -20,41 +19,31 @@ export function Header() {
                 <h2 className='head-title pc'>Reputable Brand Page</h2>
                 <h2 className='head-title mobile'>RBP</h2>
 
-                <nav className='pc'>
-                    <ul className='btn-container'>
-                        {
-                            links.map(({ id, text }) => {
-                                return (
-                                    <li className='head-btn' key={id}>{text}</li>
-                                )
-                            })
-                        }
-                    </ul>
-                </nav>
-
                 <button onClick={handleClick} className='hamburger-menu'>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg" alt="hamburger menu" />
                 </button>
             </div>
 
-            {
-                showMenu
-                    ? (
-                        <nav className='mobile'>
-                            <ul className='btn-container'>
-                                {
-                                    links.map(({ id, text }) => {
-                                        return (
-                                            <li className='head-btn' key={id}>{text}</li>
-                                        )
-                                    })
-                                }
-                            </ul>
-                        </nav>
-                    )
-                    :
-                    null
-            }
+            <Menu
+                items={links}
+                showMenu={showMenu}
+            />
         </header>
+    )
+}
+
+function Menu({ items, showMenu }) {
+    return (
+        <nav className={!showMenu ? 'hidden' : ''}>
+            <ul className='btn-container'>
+                {
+                    items.map(({ id, text }) => {
+                        return (
+                            <li className='head-btn' key={id}>{text}</li>
+                        )
+                    })
+                }
+            </ul>
+        </nav>
     )
 }
