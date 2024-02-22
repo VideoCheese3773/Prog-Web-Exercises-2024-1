@@ -1,21 +1,7 @@
 import { useState } from 'react';
+import { links } from '../../const/links';
 import './style.css'
 
-const links = [
-    {
-        id: crypto.randomUUID(),
-        text: "Link 1"
-    },
-    {
-        id: crypto.randomUUID(),
-        text: "Link 2"
-    },
-    {
-        id: crypto.randomUUID(),
-        text: "Link 3"
-    }
-]
-console.log(links);
 
 //TODO Finish functionality of dropdown menu
 
@@ -51,24 +37,24 @@ export function Header() {
                 </button>
             </div>
 
-                {
-                    showMenu
-                        ? (
-                            <nav className='mobile'>
-                                <ul className='btn-container'>
-                                    {
-                                        links.map(({ id, text }) => {
-                                            return (
-                                                <li className='head-btn' key={id}>{text}</li>
-                                            )
-                                        })
-                                    }
-                                </ul>
-                            </nav>
-                        )
-                        :
-                        null
-                }
+            {
+                showMenu
+                    ? (
+                        <nav className='mobile'>
+                            <ul className='btn-container'>
+                                {
+                                    links.map(({ id, text }) => {
+                                        return (
+                                            <li className='head-btn' key={id}>{text}</li>
+                                        )
+                                    })
+                                }
+                            </ul>
+                        </nav>
+                    )
+                    :
+                    null
+            }
         </header>
     )
 }
