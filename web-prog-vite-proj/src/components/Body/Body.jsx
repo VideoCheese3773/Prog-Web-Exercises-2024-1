@@ -1,6 +1,7 @@
 import './style.css'
 import { Counter } from '../Counter/Counter'
 import { Button } from '../Button/Button'
+import { Facts } from '../Facts/Facts'
 
 import { useState } from 'react'
 
@@ -49,6 +50,7 @@ export function Body() {
                 <Button className={btnUp.className} clickFunction={btnUp.clickFunction} text={btnUp.text} />
             </div>
             <Button className={btnReset.className} clickFunction={btnReset.clickFunction} text={btnReset.text} />
+            <Facts count={count}/>
         </main>
     )
 }
