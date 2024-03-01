@@ -1,4 +1,4 @@
-import 'style.css'
+import './style.css'
 
 export function TodoList({ checkBtn, addTask }) {
     return (
@@ -9,8 +9,8 @@ export function TodoList({ checkBtn, addTask }) {
             </form>
             <div>
                 <div className='filter'>
-                <input type="radio" name="" id="" />
-                <label htmlFor=""></label>
+                    <input type="radio" name="" id="" />
+                    <label htmlFor=""></label>
                 </div>
             </div>
         </>
