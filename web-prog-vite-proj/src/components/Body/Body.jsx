@@ -13,9 +13,23 @@ export function Body() {
         alert("addTask")
     }
 
+    const compTasks = () => {
+        alert("compTasks")
+        //? Could be an UserState??
+    }
+
+    const allTasks = () => {
+        alert("allTasks")
+        //? Could be an UserState??
+    }
+
     return (
         <main>
             <TodoList checkBtn={checkBtn} addTask={addTask}/>
+            <div id='taskContainer'>
+
+            </div>
+            <TodoFooter compTasks={compTasks} allTasks={allTasks}/>
         </main>
     )
 }
