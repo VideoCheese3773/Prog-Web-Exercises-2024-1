@@ -3,14 +3,22 @@ import './style.css'
 export function TodoList({ checkBtn, addTask }) {
     return (
         <>
-            <form>
-                <input onChange={checkBtn} type="text" name="" id="" />
-                <button onClick={addTask} type="submit"></button>
+            <form onSubmit={addTask}>
+                <input onChange={checkBtn} type="text" id="taskInput" />
+                <button type="submit">Submit</button>
             </form>
-            <div>
+            <div className='filterComp'>
                 <div className='filter'>
                     <input type="radio" name="" id="" />
-                    <label htmlFor=""></label>
+                    <label htmlFor="">All</label>
+                </div>
+                <div className='filter'>
+                    <input type="radio" name="" id="" />
+                    <label htmlFor="">Completed</label>
+                </div>
+                <div className='filter'>
+                    <input type="radio" name="" id="" />
+                    <label htmlFor="">Pending</label>
                 </div>
             </div>
         </>
